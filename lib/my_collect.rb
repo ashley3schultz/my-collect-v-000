@@ -1,9 +1,8 @@
 def my_collect(array)
   len = 0 
   col = []
-  language = [col]
-  while len < array.size
-    col << yield(array)
+  while len < array.length
+    col << yield(array[len])
     len += 1
   end
   col 
